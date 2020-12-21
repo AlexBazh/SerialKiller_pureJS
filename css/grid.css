@@ -1,0 +1,36 @@
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.col25{
+    margin: 12px;
+    box-sizing: border-box;
+    width: calc(25% - 24px);
+}
+
+.col100{
+    margin: 12px;
+    box-sizing: border-box;
+    width: calc(100% - 24px);
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    .col25{
+        width: calc(50% - 24px);
+    }
+}
+
+@media screen and (max-width: 640px){
+    .col25{
+        width: calc(100% - 24px);
+    }
+}
