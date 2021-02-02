@@ -2,8 +2,7 @@ let movieList = document.querySelector('.movie_list');
 let noResults = document.querySelector('.no_results');
 let searchBar = document.querySelector('.search_bar');
 let buttonSearch = document.querySelector('.button_search');
-let apikey = 'a1d5e399';
-
+let apikey = '6b6ec75b'; // backup - 25851263, 3fb5f5bd
 
 buttonSearch.onclick = function (){
     while (movieList.firstChild){
