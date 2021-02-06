@@ -1,0 +1,20 @@
+:root{
+
+    --gray_100: #1D233A;
+    --gray_80: #4A4F61;
+    --gray_40: #A2A3A5;
+    --gray_30: #D2D3D8;
+    --gray_20: #EDEEF0;
+    --gray_10: #F2F2F2;
+
+    --primary_100: #273ECA;
+    --primary_80: #475FEF;
+    --primary_40: #B5BFF9;
+    --primary_10: #EDEFFE;
+
+    --white_100: #fff;
+    
+    --shadow_80: 0px 2px 20px rgba(29, 35, 58, 0.16);
+    --shadow_50: inset 0px -1px 0px var(--primary_80);
+
+}
