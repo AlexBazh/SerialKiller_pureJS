@@ -42,7 +42,6 @@ h5{
 }
 
 h6{
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -64,4 +63,27 @@ p{
     font-size: 12px;
     line-height: 18px;
     padding: 4px 0;
+}
+
+@media screen and (max-width: 640px){
+    h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    h3{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    p{
+        line-height: 18px;
+    }
+    .small{
+        line-height: 16px;
+    }
 }

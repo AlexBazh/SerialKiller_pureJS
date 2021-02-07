@@ -1,0 +1,23 @@
+@media screen and (max-width: 640px){
+    .banner img{
+        display: none;
+    }
+    .filter h5{
+        display: none;
+    }
+    header .menu{
+        display: none;
+    }
+    .search_section{
+        margin-top: 10vh;
+    }
+    .text_content {
+        padding: 20px 24px;
+    }
+    .filter{
+        margin-left: 4px;
+    }
+    .burger_menu{
+        display: block;
+    }
+}
