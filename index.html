@@ -3,23 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>OMDB connect</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/response.css">
+    <title>Serial Killer</title>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col100">
-                <h1 class="main_title">Movie list</h1>
-        <input class="search_bar" type="text" placeholder="Find the movie">
-        <button class="button_search">Search</button>
-        <h2 class="no_results hide"></h2>
+        <div class="overlay"></div>
+        <div class="row j_c">
+            <div class="col8">
+                <div class="page_content">
+                    <div class="hero_header">
+                        <header>
+                            <div class="mobile_header">
+                                <div class="burger_menu">
+                                    <i class="burger_icon" data-feather="menu"></i>
+                                </div>
+                                <img class="logo" src="img/logo.svg" alt="logo">
+                            </div>
+                            <div class="menu">
+                                <div class="menu_item">
+                                    <a href="" tabindex="1">
+                                        <h5>About service</h5>
+                                    </a>
+                                </div>
+                                <div class="menu_item">
+                                    <a href="" tabindex="2">
+                                        <h5>Telegram</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <aside class="sidebar">
+                                <div class="menu_mobile">
+                                    <div class="menu_item">
+                                        <i class="close_sidebar" data-feather="x"></i>
+                                    </div>
+                                    <div class="menu_item">
+                                        <a href="" tabindex="1">
+                                            <h5>About service</h5>
+                                        </a>
+                                    </div>
+                                    <div class="menu_item">
+                                        <a href="" tabindex="2">
+                                            <h5>Telegram</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </header>
+                        <div class="search_section">
+                            <h1>Find TV Shows</h1>
+                            <div class="search_content">
+                                <div class="filters">
+                                    <input type="text" class="search_bar" name="searchBar" placeholder="Find any TV shows or series">
+                                    <div class="filter_block">
+                                        <button class="filter" href="">
+                                            <img class="icon_24" src="img/filter.svg" alt="">
+                                            <h5>Filters</h5>
+                                        </button>
+                                        <button class="filter_mobile" href="">
+                                            <img class="icon_24" src="img/filter.svg" alt="">
+                                        </button>
+                                        <div class="popup_container">
+                                            <i class="close_filter_icon" data-feather="x"></i>
+                                            <div class="popup_content">
+                                                <form action="">
+                                                    <fieldset>
+                                                        <h5>Rating</h5>
+                                                        <div class="control_group">
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_1" id="checkbox_primary_1">
+                                                                <label for="checkbox_primary_1">1 - 3 stars</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_2" id="checkbox_primary_2">
+                                                                <label for="checkbox_primary_2">3 - 7 stars</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_3" id="checkbox_primary_3">
+                                                                <label for="checkbox_primary_3">7 - 10 stars</label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h5>Year</h5>
+                                                        <div class="control_group">
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_4" id="checkbox_primary_4">
+                                                                <label for="checkbox_primary_4">1990s</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_5" id="checkbox_primary_5">
+                                                                <label for="checkbox_primary_5">2000s</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_6" id="checkbox_primary_6">
+                                                                <label for="checkbox_primary_6">2010s</label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h5>Genre</h5>
+                                                        <div class="control_group">
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_7" id="checkbox_primary_7">
+                                                                <label for="checkbox_primary_7">Drama</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_8" id="checkbox_primary_8">
+                                                                <label for="checkbox_primary_8">Criminal</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_9" id="checkbox_primary_9">
+                                                                <label for="checkbox_primary_9">Comedy</label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <h5>Genre</h5>
+                                                        <div class="control_group">
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_7" id="checkbox_primary_7">
+                                                                <label for="checkbox_primary_7">Drama</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_8" id="checkbox_primary_8">
+                                                                <label for="checkbox_primary_8">Criminal</label>
+                                                            </div>
+                                                            <div class="checkbox_wrapper">
+                                                                <input type="checkbox" class="custom_checkbox" name="checkbox_primary_9" id="checkbox_primary_9">
+                                                                <label for="checkbox_primary_9">Comedy</label>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                                <div class="button_group">
+                                                    <button type="button" class="btn btn_S btn_primary">Apply</button>
+                                                    <button type="button" class="btn btn_S btn_secondary" id="close_filter">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner">
+                                    <div class="text_content">
+                                        <h3>Rating for each season and episode</h3>
+                                        <p>Check the rating of each episode and season to understand watching this show or not</p>
+                                    </div>
+                                    <img src="img/banner_img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p class="small">All rights reserved</p>
+                        <p class="small">2020</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row movie_list"></div>
     </div>
-
-    <script src="main.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
